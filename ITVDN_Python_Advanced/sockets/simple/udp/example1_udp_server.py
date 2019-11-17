@@ -1,0 +1,19 @@
+import socket
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock.bind(('127.0.0.1', 8888))
+result = sock.recv(1024)
+print('Message', result.decode('utf-8'))
+sock.close()
+
+
+#  Example of reservation of the all interfaces
+# import socket
+#
+# sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+# sock.bind(('0.0.0.0', 8888))
+# sock.bind(('0', 8888))
+# sock.bind(('0', 8888))
+# result = sock.recv(1024)
+# print('Message', result.decode('utf-8'))
+# sock.close()
