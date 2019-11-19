@@ -7,7 +7,8 @@ import requests
 r = requests.get('https://api.github.com/events')
 
 # Мы получили объект Response с именем r. С помощью этого объекта можно получить всю необходимую информацию.
-# Простой API Requests означает, что все формы HTTP запросов- очевидны. Ниже приведен пример того, как вы можете сделать запрос HTTP POST:
+# Простой API Requests означает, что все формы HTTP запросов- очевидны. Ниже приведен пример того,
+# как вы можете сделать запрос HTTP POST:
 
 r = requests.post('http://httpbin.org/post', data={'key': 'value'})
 
